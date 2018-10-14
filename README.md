@@ -20,8 +20,8 @@ Note: Order of training should be JUMP, DUCK and then JUST RUN. (This is a const
 Things to do, future iterations:
 
 1) Not start the game immediately until training is done. 
-2) Add other versions of chrome dino.
-3) Add music to accompanying the game. 
+2) Add other versions of the chrome dino like vanilla cake, christmas, etc.
+3) Add music to the game. 
 
 Watch a demo here.
 
@@ -29,6 +29,8 @@ Watch a demo here.
 Technical Explorations: 
 
 We referred to [tensorflow.js](https://github.com/tensorflow/tfjs-models) which was used to create projects like [Teachable Machine](https://teachablemachine.withgoogle.com/). The code shows how you can create a KNN classifier that can be trained live in the browser on a webcam image. It is intentionally kept very simple so it can provide a starting point for new projects like these.
+
+Other References:
 
 Behind the scenes, the image from the webcam is being processed by an activation of [MobileNet](https://github.com/tensorflow/tfjs-examples/tree/master/mobilenet). This network is trained to recognize all sorts of classes from the imagenet dataset, and is optimized to be really small, making it useable in the browser. Instead of reading the prediction values from the MobileNet network, we instead take the second to last layer in the neural network and feed it into a KNN ([k-nearest neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)) classifier that allows you to train your own classes. 
 
