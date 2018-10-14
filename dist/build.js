@@ -2321,7 +2321,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 // Number of classes to classify
-var NUM_CLASSES = 3;
+var NUM_CLASSES = 2;
 // Webcam Image size. Must be 227.
 var IMAGE_SIZE = 227;
 // K value for KNN
@@ -2343,8 +2343,7 @@ var Main = function () {
 
         var code = {
             0: { "btext": "Jump", "code": 38 },
-            1: { "btext": "Duck", "code": 40 },
-            2: { "btext": "Just Run", "code": "" }
+            1: { "btext": "Just Run", "code": "" }
         };
 
         // Create video element that will contain the webcam image
@@ -2489,8 +2488,7 @@ var Main = function () {
 
                             _code = {
                                 0: { "key": "up", "code": 38 },
-                                1: { "key": "down", "code": 40 },
-                                2: { "key": "nothing", "code": "" }
+                                1: { "key": "nothing", "code": "" }
                             };
                             numClasses = this.knn.getNumClasses();
 
@@ -2514,7 +2512,7 @@ var Main = function () {
                                 document.dispatchEvent(e2);
                             };
 
-                            if (res.classIndex !== 2 || _typeof(res.classIndex) !== undefined) {
+                            if (res.classIndex !== 1 || _typeof(res.classIndex) !== undefined) {
                                 e = document.createEvent('Event');
 
                                 e.initEvent('keydown', true, true);

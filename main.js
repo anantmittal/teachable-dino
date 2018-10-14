@@ -18,7 +18,7 @@ import * as tf from '@tensorflow/tfjs';
 import * as knnClassifier from '@tensorflow-models/knn-classifier';
 
 // Number of classes to classify
-const NUM_CLASSES = 3;
+const NUM_CLASSES = 2;
 // Webcam Image size. Must be 227.
 const IMAGE_SIZE = 227;
 // K value for KNN
@@ -37,8 +37,7 @@ class Main {
 
         const code = {
             0: {"btext": "Jump", "code": 38},
-            1: {"btext": "Duck", "code": 40},
-            2: {"btext": "Just Run", "code": ""}
+            1: {"btext": "Just Run", "code": ""}
         };
 
         // Create video element that will contain the webcam image
@@ -137,8 +136,7 @@ class Main {
 
             const code = {
                 0: {"key": "up", "code": 38},
-                1: {"key": "down", "code": 40},
-                2: {"key": "nothing", "code": ""}
+                1: {"key": "nothing", "code": ""}
             };
 
             const numClasses = this.knn.getNumClasses();
@@ -155,7 +153,7 @@ class Main {
                     document.dispatchEvent(e2);
                 }
 
-                if ((res.classIndex !== 2) || (typeof(res.classIndex) !== undefined)) {
+                if ((res.classIndex !== 1) || (typeof(res.classIndex) !== undefined)) {
 
                     let e = document.createEvent('Event');
                     e.initEvent('keydown', true, true);
