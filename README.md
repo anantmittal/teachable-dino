@@ -1,8 +1,32 @@
 # Teachable Machine Dinosaur
 
-Teachable Dino was created by two masters students for MHacks 2018 (https://twitter.com/mhacks?lang=en).
+Teachable Dino was created by two masters students for [MHacks 2018](https://twitter.com/mhacks?lang=en).
 
-This is a small boilerplate project that demonstrates how to use [tensorflow.js](https://github.com/tensorflow/tfjs-models) to create projects like [Teachable Machine](https://teachablemachine.withgoogle.com/). The code shows how you can create a KNN classifier that can be trained live in the browser on a webcam image. It is intentionally kept very simple so it can provide a starting point for new projects.
+Inspired by the idleness in a grad student's life which is accompanied by staring into laptops for hours, we decided to explore ways of incorporating leisure phycial activity into their schedule. Teachable Dino hopes to save you from the office syndrome and encourage you to take a few short breaks to train him. 
+
+We have combined [chrome's popular dino] chrome://dino/ with Google's [Teachable Machine Experiment ] (https://teachablemachine.withgoogle.com/). By using your webcam you can make gestures to train three actions : JUMP, DUCK and RUN. You can then play the game by using those gestures instead of the traditional keystrokes. 
+
+How to Play:
+
+1) Open How to [Train Your Dino](https://www.howtotrainyourdino.com/) in your web browser. 
+2) Allow access to the webcam. (Note none of the images are stored, everything happens on your local browser)
+3) Click on JUMP to record an image of the corresponding gesture. Number of clicks equals the number of times trained, for better results please train at least 50 times. 
+4) Click on DUCK to record an image of the corresponding gesture. Number of clicks equals the number of times trained, for better results please train at least 50 times. 
+5) Click on JUST RUN to record an image of the corresponding gesture. Number of clicks equals the number of times trained, for better results please train at least 50 times. 
+6) Now,play! You can control the dino by your trained gestures. 
+
+Things to do, future iterations:
+
+1) Not start the game immediately until training is done. 
+2) Add other versions of chrome dino.
+3) Add music to accompanying the game. 
+
+Watch a demo here.
+
+
+Technical Explorations: 
+
+We referred to [tensorflow.js](https://github.com/tensorflow/tfjs-models) which was used to create projects like [Teachable Machine](https://teachablemachine.withgoogle.com/). The code shows how you can create a KNN classifier that can be trained live in the browser on a webcam image. It is intentionally kept very simple so it can provide a starting point for new projects like these.
 
 Behind the scenes, the image from the webcam is being processed by an activation of [MobileNet](https://github.com/tensorflow/tfjs-examples/tree/master/mobilenet). This network is trained to recognize all sorts of classes from the imagenet dataset, and is optimized to be really small, making it useable in the browser. Instead of reading the prediction values from the MobileNet network, we instead take the second to last layer in the neural network and feed it into a KNN ([k-nearest neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)) classifier that allows you to train your own classes. 
 
