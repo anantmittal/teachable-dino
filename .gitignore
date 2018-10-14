@@ -1,2 +1,8 @@
 /node_modules
 /.DS_Store
+.idea/
+.firebase/
+.firebaserc
+assets/index.html
+firebase-debug.log
+firebase.json
