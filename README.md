@@ -14,7 +14,7 @@ How to Play:
 4) Click on JUST RUN to record an image of the corresponding gesture. Number of clicks equals the number of times trained, for better results please train at least 10 times. 
 5) Now,play! You can control the dino by your trained gestures. 
 
-Note: Order of training should be JUMP, DUCK and then JUST RUN. (This is a constraint we were not able to solve during the hackathon period of about 36 hours.)
+Note: Order of training should be JUMP and then JUST RUN. (This is a constraint we were not able to solve during the hackathon period of about 36 hours.)
 
 Things to do, future iterations:
 
@@ -23,7 +23,7 @@ Things to do, future iterations:
 3) Add music to the game. 
 
 Watch a demo [here](https://youtu.be/-_wqHkGROKs).
-(We have currently removed the DUCK option to make the game easier.)
+(We initially created three options but have currently removed the DUCK option to make the game easier.)
 
 Technical Explorations: 
 
