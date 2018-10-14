@@ -4,7 +4,7 @@ Teachable Dino was created by two masters students for [MHacks 2018](https://twi
 
 Inspired by the idleness in a grad student's life which is accompanied by staring into laptops for hours, we decided to explore ways of incorporating leisure phycial activity into their schedule. Teachable Dino hopes to save you from the office syndrome and encourage you to take a few short breaks to train him. 
 
-We have combined [chrome's popular dino] chrome://dino/ with Google's [Teachable Machine Experiment] (https://teachablemachine.withgoogle.com/) . By using your webcam you can make gestures to train three actions : JUMP, DUCK and RUN. You can then play the game by using those gestures instead of the traditional keystrokes. 
+We have combined [chrome's popular dino](chrome://dino/) with Google's [Teachable Machine Experiment](https://teachablemachine.withgoogle.com/). By using your webcam you can make gestures to train three actions : JUMP, DUCK and RUN. You can then play the game by using those gestures instead of the traditional keystrokes. 
 
 How to Play:
 
@@ -14,6 +14,8 @@ How to Play:
 4) Click on DUCK to record an image of the corresponding gesture. Number of clicks equals the number of times trained, for better results please train at least 50 times. 
 5) Click on JUST RUN to record an image of the corresponding gesture. Number of clicks equals the number of times trained, for better results please train at least 50 times. 
 6) Now,play! You can control the dino by your trained gestures. 
+
+Note: Order of training should be JUMP, DUCK and then JUST RUN. (This is a constraint we were not able to solve during the hackathon period of about 36 hours.)
 
 Things to do, future iterations:
 
