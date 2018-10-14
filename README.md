@@ -23,7 +23,7 @@ Things to do, future iterations:
 2) Add other versions of the chrome dino like vanilla cake, christmas, etc.
 3) Add music to the game. 
 
-Watch a demo here.
+Watch a demo [here](https://youtu.be/-_wqHkGROKs).
 
 
 Technical Explorations: 
