@@ -10,10 +10,9 @@ How to Play:
 
 1) Open How to [Train Your Dino](https://www.howtotrainyourdino.com/) in your web browser. 
 2) Allow access to the webcam. (Note none of the images are stored, everything happens on your local browser)
-3) Click on JUMP to record an image of the corresponding gesture. Number of clicks equals the number of times trained, for better results please train at least 50 times. 
-4) Click on DUCK to record an image of the corresponding gesture. Number of clicks equals the number of times trained, for better results please train at least 50 times. 
-5) Click on JUST RUN to record an image of the corresponding gesture. Number of clicks equals the number of times trained, for better results please train at least 50 times. 
-6) Now,play! You can control the dino by your trained gestures. 
+3) Click on JUMP to record an image of the corresponding gesture. Number of clicks equals the number of times trained, for better results please train at least 10 times.  
+4) Click on JUST RUN to record an image of the corresponding gesture. Number of clicks equals the number of times trained, for better results please train at least 10 times. 
+5) Now,play! You can control the dino by your trained gestures. 
 
 Note: Order of training should be JUMP, DUCK and then JUST RUN. (This is a constraint we were not able to solve during the hackathon period of about 36 hours.)
 
@@ -24,7 +23,7 @@ Things to do, future iterations:
 3) Add music to the game. 
 
 Watch a demo [here](https://youtu.be/-_wqHkGROKs).
-
+(We have currently removed the DUCK option to make the game easier.)
 
 Technical Explorations: 
 
